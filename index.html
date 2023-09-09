@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bt.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/folio.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <section id="home" class="section">
+            <img src="{% static 'images/p.jpg' %}" alt="Your Image"
+                style="max-width: 30%; border-radius: 50%; float: left; margin-right: 25px;">
+            <h1>
+                <span>Hi, I'm</span><br>
+                <span>Aaditya Singh Gurjar</span>
+            </h1>
+            <p>A Computer Science Enthusiast</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </section>
+    </div>
+
+    <div class="container mt-5">
+        <!-- About Me Section -->
+        <section id="about" class="section" style="margin-top: 50px;">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a <b>Computer Science enthusiast</b> with a passion for <b>programming and
+                            problem-solving</b>.
+                        Pursuing a <b>B.Tech in Computer Science (AI)</b> from <b>IIMT College Of Engineering, AKTU</b>.
+                        I believe in
+                        <u>continuous learning</u> and strive to stay updated with the latest advancements in
+                        technology.
+                    </p>
+                    <a href="https://www.linkedin.com/in/aaditya-singh-gurjar-48524b230" target="_blank">
+                        <i class="fab fa-linkedin social-icon"></i>
+                    </a>
+                    <a href="https://github.com/aaditya10-9" target="_blank">
+                        <i class="fab fa-github social-icon"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQGdLwzWoVeirg/profile-displayphoto-shrink_800_800/0/1683975862936?e=2147483647&v=beta&t=jsX1fS8FUvu8-PnwR1O0g4frTc6J115_IN29r-mZl3o"
+                        alt="About Image" style="max-width: 65%; border-radius: 40%;">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container mt-5">
+        <!-- Education Section -->
+        <section id="education" class="section" style="margin-top: 50px;">
+            <h2>Education</h2>
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <!-- Education Card 1 -->
+                    <div class="education-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>AKTU</b></h5>
+                            <p class="card-text">B.Tech in Computer Science with specialization in
+                                Artificial Intelligence</p>
+                            <p class="card-text">Year: 2020 - Present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Education Card 2 -->
+                    <div class="education-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>ASPAM Scottish School/CBSE</b></h5>
+                            <p class="card-text">Intermediate</p>
+                            <p class="card-text">Year: 2019 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Education Card 3 -->
+                    <div class="education-card">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>ASPAM Scottish School/CBSE</b></h5>
+                            <p class="card-text">High School</p>
+                            <p class="card-text">Year: 2017 - 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Skills Section -->
+        <section id="skills" class="section" style="margin-top: 50px;">
+            <h2>Skills</h2>
+            <div class="row skills-section">
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <i class="fab fa-html5 skills-icon"></i>
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <i class="fab fa-java skills-icon"></i>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <i class="fas fa-code skills-icon"></i>
+                        <p>C</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <i class="fab fa-python skills-icon"></i>
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card">
+                        <i class="fas fa-database skills-icon"></i>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Projects Section -->
+        <section id="projects" class="section" style="margin-top: 50px;">
+            <h2>Projects</h2>
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h5 class="card-title"><b>Billing System</b></h5>
+                        <p class="card-text">
+                            Made a GUI Application in Java to generate a bill of the commodities bought from a firm
+                            and storing the data in Database using MySQL server.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h5 class="card-title"><b>Portfolio Website</b></h5>
+                        <p class="card-text">
+                            Made a portfolio website using HTML and Tailwind CSS with Django framework in Python.
+                        </p>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <h5 class="card-title"><b>Blog Website</b></h5>
+                        <p class="card-text">
+                            Made a Blog website using HTML and Tailwind CSS with Django framework in Python.
+                        </p>
+                    </div>
+                </div>
+                <!-- Add more project cards here if needed -->
+            </div>
+        </section>
+    </div>
+    <div class="container mt-5">
+        <!-- Contact Me Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="row">
+                <!-- Contact Card 1: Phone -->
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="card-body">
+                            <h5 class="card-title fas fa-phone"> Phone</h5>
+                            <p class="card-text"><a href="tel:+919540640815">+91-9540640815</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Card 2: LinkedIn -->
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="card-body">
+                            <h5 class="card-title fab fa-linkedin"> LinkedIn</h5>
+                            <p class="card-text"><a href="https://www.linkedin.com/in/aaditya-singh-gurjar-48524b230"
+                                    target="_blank">Aaditya Singh Gurjar</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Card 3: Email -->
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="card-body">
+                            <h5 class="card-title fas fa-envelope"> Email</h5>
+                            <p class="card-text"><a href="mailto:aadityagujjar3@gmail.com">aadityagujjar3@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bt.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

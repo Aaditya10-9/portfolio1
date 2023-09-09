@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #293068;
+    background: linear-gradient(to right, #0a2b6e, #0f78a0);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(12, 55, 90, 0.7);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#0f78a0, #07a77d);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+/* Skills card styles */
+.skills-card {
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: scale(1.55);
+}
+
+/* Skills icon styles */
+.skills-icon {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Education card styles */
+.education-card {
+    border: 2px solid #07a77d;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 10px 20px;
+    color: black;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+/* Projects card styles */
+.project-card {
+    border: 2px solid #07a77d;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 10px 20px;
+    color: black;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* CTA button styles */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #07a77d;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #151b54;
+}
+
+/* Contact card styles */
+.contact-card {
+    border: 2px solid #07a77d;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+    /* Increase size on hover */
+}
+
+/* Style for contact card titles */
+.contact-card .card-title {
+    font-weight: bold;
+    color: #0c0c0c;
+}
+
+/* Style for contact card links */
+.contact-card .card-text a {
+    color: #f9f6f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card .card-text a:hover {
+    color: #f19c08;
+}
+#social {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffcc00;
+}
